@@ -1,7 +1,11 @@
 import Navbar from "../components/navbar";
+import SignUpCard from "../components/sign-up-card";
 
 export default function SignUp() {
     return(
-        <Navbar />
+        <div>
+            <Navbar />
+            <SignUpCard />
+        </div>
     )
 }
