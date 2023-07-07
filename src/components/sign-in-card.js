@@ -1,6 +1,18 @@
 import "../assets/sign-in-card.css";
-
+import { useState } from "react";
 export default function SignInCard() {
+    const initialValues = {
+        email: '',
+        pw: '',
+    };
+
+    const[formval, setFormval] = useState(initialValues);
+
+    const inputChange = (e) => {
+        const { name, value } = e.target;
+        setFormval({ ...formval,[name]: value })
+        console.log(formval);
+    }
 
     return (
         <form action="/" method="POST" autoComplete="on">
@@ -11,11 +23,27 @@ export default function SignInCard() {
                 </div>
                 <div className="email">
                     <label htmlFor="email"></label>
-                    <input type="text" id="email" autoComplete="off" placeholder="Email"></input>
+                    <input 
+                        type="text" 
+                        id="email" 
+                        autoComplete="off" 
+                        placeholder="Email"
+                        name="email"
+                        value={formval.email}
+                        onChange={inputChange}>
+                    </input>
                 </div>
                 <div className="pw">
                     <label htmlFor="pw"></label>
-                    <input type="password" id="pw" autoComplete="off" placeholder="Password"></input>
+                    <input 
+                        type="password" 
+                        id="pw" 
+                        autoComplete="off" 
+                        placeholder="Password"
+                        name="pw"
+                        value={formval.pw}
+                        onChange={inputChange}>
+                    </input>
                 </div>
                 <div className="btn-submit">
                     <button type="submit" id="sign-submit" className="btn btn-default">Sign in</button>
