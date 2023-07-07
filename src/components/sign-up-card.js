@@ -1,5 +1,3 @@
-import '../assets/sign-up-card.css';
-
 export default function SignUpCard() {
 
     return (
