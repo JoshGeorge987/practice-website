@@ -1,0 +1,17 @@
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    
+}
+
+.navbar-brand .nav-icon {
+    color:orange;
+}
+
+.nav-icon-text {
+    padding-left: 3px;
+}
+
+.nav-icon {
+    padding-right: 2px;
+}

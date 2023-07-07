@@ -1,0 +1,12 @@
+.section.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+}
+
+.contact-details {
+    margin-left: 10vw;
+    margin-bottom: 5vw;
+}

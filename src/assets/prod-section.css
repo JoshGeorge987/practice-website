@@ -1,0 +1,45 @@
+.section {
+    color: white;
+    background-color: #222;
+    min-height: 45vh;
+    overflow: auto;
+}
+
+.section.home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box {
+    padding-top: 20px;
+    margin: 0;
+    width: 50vw;
+    min-height: 45vh;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px ;
+}
+
+.sec-btn-primary {
+    background-color: blue;
+    border-color: blue;
+    margin-right: 50px;
+}
+
+.sec-btn-primary:hover {
+    background-color: navy;
+}
+
+.sec-btn-default {
+    background-color: #222;
+    color: white;
+}
